@@ -30,7 +30,7 @@ export const addListener = createReduxBoundAddListener('root');
 const middleware = [
   navigationMiddleware,
   sagaMiddleware,
-  // logger,
+  logger,
 ];
 
 const store = createStore(reducers, {}, applyMiddleware(...middleware));

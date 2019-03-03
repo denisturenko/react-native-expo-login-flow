@@ -18,8 +18,8 @@ import {
 import { } from '../auth';
 
 export const AuthTabNavigator = TabNavigator({
-  [Routes.SIGN_IN_SCREEN]: { screen: SignInScreen },
   [Routes.SIGN_UP_SCREEN]: { screen: SignUpScreen },
+  [Routes.SIGN_IN_SCREEN]: { screen: SignInScreen },
 }, {
   headerMode: 'none',
   animationEnabled: false,

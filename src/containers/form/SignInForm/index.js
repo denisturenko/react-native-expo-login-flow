@@ -29,15 +29,12 @@ const Container = ({
   loginRequestAction: onSubmit,
   loginRequestErrorSelector,
   loginRequestStatusSelector,
-}) => {
-  console.log('---------', loginRequestErrorSelector, loginRequestStatusSelector);
-  return (
-    <WithForm
-      onSubmit={({ login, password }) => onSubmit(login, password)}
-      requestError={!_.isEmpty(loginRequestErrorSelector) && loginRequestStatusSelector === RequestStatus.FINISHED}
-    />
-  );
-};
+}) => (
+  <WithForm
+    onSubmit={({ login, password }) => onSubmit(login, password)}
+    requestError={!_.isEmpty(loginRequestErrorSelector) && loginRequestStatusSelector === RequestStatus.FINISHED}
+  />
+);
 
 Container.propTypes = {
   loginRequestAction: PropTypes.func.isRequired,

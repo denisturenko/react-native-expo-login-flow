@@ -6,7 +6,7 @@ import {
 export const colors = {
   BACKGROUND: '#2e2f40',
 
-  PRIMARY: '#335D9C',
+  PRIMARY: '#841584',
   ACCENT: '#08ce94',
   BORDER_GREY: '#95989A',
   COOL_GREY: '#CEDFDE',
@@ -22,8 +22,8 @@ export const colors = {
   FORM_LIGHT_INPUT: '#fff',
   FORM_LIGHT_PLACEHOLDER: 'rgba(0,0,0,0.3)',
 
-  BUTTON_PRIMARY_BG: '#323268',
-  BUTTON_PRIMARY_TITLE: '#007ADD',
+  BUTTON_PRIMARY_BG: '#841584',
+  BUTTON_PRIMARY_TITLE: '#ffffff',
 
   BUTTON_SECONDARY_BG: 'rgba(22, 174, 249, 0.9)',
   BUTTON_SECONDARY_TITLE: '#fff',

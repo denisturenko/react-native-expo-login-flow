@@ -11,6 +11,8 @@ export const root = StyleSheet.create({
     paddingRight: 20,
     paddingBottom: 20,
     marginTop: 20,
+    marginLeft: 20,
+    marginRight: 20,
   },
 });
 
