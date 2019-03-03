@@ -38,7 +38,7 @@ export const fontSize = {
   DETAIL: 12,
   MINOR: 10,
 
-  FORM_LABEL: 18,
+  FORM_LABEL: 12,
   FORM_INPUT: 16,
 };
 

@@ -10,7 +10,7 @@ import { SIGN_IN_SCREEN } from '../../constants/routes';
 export const SignUpScreen = ({ navigation }) => (
   <SignUpLayout selectedTabIndex={1} onPressTab={() => navigation.navigate(SIGN_IN_SCREEN)}>
     <View style={view.container}>
-      <Text>Sign Up screen</Text>
+      <Text>Sign Up screen12</Text>
     </View>
   </SignUpLayout>
 );

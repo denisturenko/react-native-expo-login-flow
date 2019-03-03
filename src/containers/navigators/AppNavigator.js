@@ -49,7 +49,7 @@ class _AppNavigator extends React.Component {
 
     componentWillReceiveProps(nextProps) {
       const nextRoute = getCurrentRoute(nextProps.nav).routeName;
-      console.log(`Next route: ${nextRoute}`);
+      // console.log(`Next route: ${nextRoute}`);
     }
 
     componentDidUpdate(prevProps, prevState) {

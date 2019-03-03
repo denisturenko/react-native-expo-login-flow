@@ -1,22 +1,24 @@
 import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
 
 import {
-    appLoading,
+  appLoading,
 } from './ui';
-import { 
-    app,
-    nav,
-    auth,
+import {
+  app,
+  nav,
+  auth,
 } from './app';
-import { 
+import {
 } from './domain';
 
 
 export default combineReducers({
-    ui: combineReducers({
-        appLoading,
-    }),
-    app,
-    nav,
-    auth,
+  form: formReducer,
+  ui: combineReducers({
+    appLoading,
+  }),
+  app,
+  nav,
+  auth,
 });
