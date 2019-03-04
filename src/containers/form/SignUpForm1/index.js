@@ -7,7 +7,7 @@ import { reduxForm } from 'redux-form';
 import { createStructuredSelector } from 'reselect';
 import SignUpForm1 from '../../../components/form/SignUpForm1';
 import { validate } from './utils';
-import {fieldNames} from "../../../constants/forms/sign_up";
+import { fieldNames } from '../../../constants/forms/sign_up';
 
 
 const FORM = 'SignUpForm';
@@ -15,6 +15,9 @@ const WithForm = reduxForm({ form: FORM, validate })(SignUpForm1);
 
 const mapStateToProps = createStructuredSelector({
   initialValues: () => ({
+    /**
+     *  Prefill data for testing
+      */
     [fieldNames.LOGIN]: 'user@site.com',
     [fieldNames.BIRTH_DAY]: '25.11.1980',
     [fieldNames.FIRST_NAME]: 'Denis',

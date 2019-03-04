@@ -4,6 +4,7 @@ import { Field } from 'redux-form';
 import { View, Button, Text } from 'react-native';
 import { root, br, errorBlock } from './styles';
 import RFTextInput from '../../inputs/RFTextInput';
+import { fieldNames } from '../../../constants/forms/sign_in';
 
 const SignInForm = ({ handleSubmit, requestError }) => (
   <View style={root.container}>
@@ -12,13 +13,13 @@ const SignInForm = ({ handleSubmit, requestError }) => (
     </View>
     <View style={br.style} />
     <Field
-      name="login"
+      name={fieldNames.LOGIN}
       label="Name"
       component={RFTextInput}
     />
     <View style={br.style} />
     <Field
-      name="password"
+      name={fieldNames.PASSWORD}
       label="Password"
       secureTextEntry
       component={RFTextInput}

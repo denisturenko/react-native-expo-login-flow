@@ -14,6 +14,9 @@ const INITIAL_STATE = {
 
 export const auth = (state = INITIAL_STATE, action) => {
   switch (action.type) {
+
+    // todo save authtoken after successfull login or registry
+
     case LOGIN_REQUEST:
       return {
         ...state,
@@ -35,6 +38,8 @@ export const auth = (state = INITIAL_STATE, action) => {
         loginRequestError: INITIAL_STATE.LoginRequestError,
         loginRequestResult: action.payload,
       };
+
+    // todo implement registry reducers
 
     default:
       return state;
