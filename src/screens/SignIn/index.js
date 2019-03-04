@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View, Alert,
+  View,
 } from 'react-native';
 import SignUpLayout from '../../components/layout/SignUpLayout';
 import { view } from './styles';
