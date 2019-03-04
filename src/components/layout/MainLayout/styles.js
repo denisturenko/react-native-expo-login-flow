@@ -7,7 +7,6 @@ export default StyleSheet.create({
     marginRight: 20,
   },
   header: {
-    color: colors.LIGHT_TEXT_PRIMARY,
     backgroundColor: colors.BUTTON_PRIMARY_BG,
     borderBottomColor: colors.LIGHT_TEXT_PRIMARY,
     borderBottomWidth: 1,

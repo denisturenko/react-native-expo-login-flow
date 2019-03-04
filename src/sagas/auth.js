@@ -9,11 +9,13 @@ import {
 
   REGISTRY_REQUEST,
   registryRequestErrorAction,
-  registryRequestSuccessAction
+  registryRequestSuccessAction,
+
+  LOGOUT,
 
 } from '../actions/side_effects/auth';
 import * as AuthApi from '../api/auth';
-import { resetToMainRoute } from '../actions/app';
+import { resetToMainRoute, resetToSignInRoute } from '../actions/app';
 
 
 export const loginFlow = function* () {
@@ -31,7 +33,7 @@ export const loginFlow = function* () {
 };
 
 
-export const regestryFlow = function* () {
+export const registryFlow = function* () {
   while (true) {
     const request = yield take(REGISTRY_REQUEST);
     const { payload } = request;
@@ -45,3 +47,10 @@ export const regestryFlow = function* () {
   }
 };
 
+
+export const logout = function* () {
+  while (true) {
+    yield take(LOGOUT);
+    yield put(resetToSignInRoute());
+  }
+};

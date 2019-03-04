@@ -18,13 +18,13 @@ const mapStateToProps = createStructuredSelector({
     /**
      *  Prefill data for testing
       */
-    [fieldNames.LOGIN]: 'user@site.com',
+   /* [fieldNames.LOGIN]: 'user@site.com',
     [fieldNames.BIRTH_DAY]: '25.11.1980',
     [fieldNames.FIRST_NAME]: 'Denis',
     [fieldNames.LAST_NAME]: 'Turenko',
     [fieldNames.PASSWORD]: '121212',
     [fieldNames.PASSWORD2]: '121212',
-    [fieldNames.OCCUPATION]: 'programmer',
+    [fieldNames.OCCUPATION]: 'programmer',*/
 
     [fieldNames.IS_WORRY_ABOUT_PEOPLE]: false,
     [fieldNames.IS_UNHAPPY]: false,

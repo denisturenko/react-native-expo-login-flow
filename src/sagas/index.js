@@ -12,7 +12,8 @@ import {
 
 import {
   loginFlow,
-  regestryFlow,
+  registryFlow,
+  logout,
 } from './auth';
 
 
@@ -20,7 +21,8 @@ const root = function* root() {
   yield all([
     takeLatest(LOAD_APP_RESOURCES, handleAppLoading),
     fork(loginFlow),
-    fork(regestryFlow),
+    fork(registryFlow),
+    fork(logout),
   ]);
 };
 

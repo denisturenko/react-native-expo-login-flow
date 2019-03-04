@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Text, Card } from 'react-native-elements';
 
-import MainLayout from '../../components/layout/MainLayout';
+import MainLayoutContainer from '../../containers/main/MainLayoutContainer';
 
 export class HomeScreen extends Component {
   render() {
     return (
-      <MainLayout>
+      <MainLayoutContainer>
         <Text h3>Feed</Text>
         <Card
           image={require('../../../assets/images/header.jpg')}
@@ -24,7 +24,7 @@ export class HomeScreen extends Component {
             Ut maximus quam quis blandit bibendum.
           </Text>
         </Card>
-      </MainLayout>
+      </MainLayoutContainer>
 
     );
   }
