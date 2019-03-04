@@ -1,6 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import {
   addNavigationHelpers,
   NavigationActions,
@@ -13,12 +11,14 @@ import { store } from '../app/App';
 import * as Routes from '../../constants/routes';
 
 import {
-  SignInScreen, SignUpScreen,
+  SignInScreen, SignUpScreen, SignUpScreen2, SignUpScreen3,
 } from '../../screens';
 import { } from '../auth';
 
 export const AuthTabNavigator = TabNavigator({
   [Routes.SIGN_UP_SCREEN]: { screen: SignUpScreen },
+  [Routes.SIGN_UP_SCREEN_2]: { screen: SignUpScreen2 },
+  [Routes.SIGN_UP_SCREEN_3]: { screen: SignUpScreen3 },
   [Routes.SIGN_IN_SCREEN]: { screen: SignInScreen },
 }, {
   headerMode: 'none',

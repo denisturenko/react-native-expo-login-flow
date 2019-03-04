@@ -5,13 +5,16 @@ export const root = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    width: '85%',
     backgroundColor: 'rgba(255,255,255,0.5)',
+    width: '85%',
     paddingTop: 20,
     paddingLeft: 20,
     paddingRight: 20,
     paddingBottom: 20,
     marginTop: 20,
+    marginLeft: 20,
+    marginRight: 20,
+    marginBottom: 100,
   },
 });
 

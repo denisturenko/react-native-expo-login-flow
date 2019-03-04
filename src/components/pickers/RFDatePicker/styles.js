@@ -2,14 +2,13 @@ import { StyleSheet } from 'react-native';
 import { fontSize } from '../../../constants/theme';
 
 export default StyleSheet.create({
-  inputContainerStyle: {
+  inputStyle: {
     borderColor: 'gray',
     borderWidth: 0,
     borderBottomWidth: 1,
     width: 240,
     height: 40,
     padding: 10,
-    fontSize: fontSize.FORM_INPUT,
   },
   labelStyle: {
     fontSize: fontSize.FORM_LABEL,

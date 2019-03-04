@@ -25,8 +25,8 @@ export const colors = {
   BUTTON_PRIMARY_BG: '#841584',
   BUTTON_PRIMARY_TITLE: '#ffffff',
 
-  BUTTON_SECONDARY_BG: 'rgba(22, 174, 249, 0.9)',
-  BUTTON_SECONDARY_TITLE: '#fff',
+  BUTTON_SECONDARY_BG: 'transparent',
+  BUTTON_SECONDARY_TITLE: '#000',
 };
 
 export const fontSize = {
